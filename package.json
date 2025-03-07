@@ -1,6 +1,6 @@
 {
   "name": "ezsnipe",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Ezsnipe is a powerful component and backend file delivery network that allows developers to easily integrate UI components and backend modules into their projects with a simple CLI command. saving time and streamlining development.",
   "main": "dist/index.js",
   "bin": {
