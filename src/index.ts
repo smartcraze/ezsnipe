@@ -3,7 +3,7 @@
 import inquirer from "inquirer";
 import chalk from "chalk";
 import { Command } from "commander";
-import { fetchRegistry, installComponent } from "./utils";
+import { fetchRegistry, installComponent } from "./utils.js";
 
 const program = new Command();
 
