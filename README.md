@@ -23,7 +23,6 @@ Verify installation:
 npx ezsnipe --version
 ```
 
----
 
 ## 🔧 **Usage**
 
