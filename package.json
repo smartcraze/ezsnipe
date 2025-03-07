@@ -1,36 +1,38 @@
 {
   "name": "ezsnipe",
   "version": "1.0.1",
-  "description": "",
-  "main": "index.js",
+  "description": "Ezsnipe is a powerful component and backend file delivery network that allows developers to easily integrate UI components and backend modules into their projects with a simple CLI command. saving time and streamlining development.",
+  "main": "dist/index.js",
   "bin": {
-    "ezsnipe": "./index.js"
+    "ezsnipe": "dist/index.js"
   },
   "homepage": "https://github.com/smartcraze/ezsnipe",
   "repository": {
     "type": "git",
-    "url": "https://github.com/smartcraze/ezsnipe.git"
+    "url": "git+https://github.com/smartcraze/ezsnipe.git"
   },
   "scripts": {
-    "build": "tsc -b",
-    "start": " node index.js",
-    "dev": "npm run build && npm run start"
+    "build": "tsc",
+    "prepare": "npm run build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
-    "@types/inquirer": "^9.0.7",
     "axios": "^1.8.2",
     "chalk": "^5.4.1",
     "commander": "^13.1.0",
-    "ezsnipe": "^1.0.0",
     "fs-extra": "^11.3.0",
-    "inquirer": "^12.4.2",
-    "typescript": "^5.8.2"
+    "inquirer": "^12.4.2"
   },
   "devDependencies": {
-    "@types/fs-extra": "^11.0.4"
+    "@types/fs-extra": "^11.0.4",
+    "@types/inquirer": "^9.0.7",
+    "@types/node": "^22.13.9",
+    "typescript": "^5.8.2"
+  },
+  "bugs": {
+    "url": "https://github.com/smartcraze/ezsnipe/issues"
   }
 }
