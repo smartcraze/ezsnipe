@@ -2,19 +2,8 @@ import axios from "axios";
 import chalk from "chalk";
 import fs from "fs-extra";
 import path from "path";
+import { fetchRegistry } from "./fetchregistry.js";
 
-export const REGISTRY_URL =
-  "https://raw.githubusercontent.com/smartcraze/ui-component-registry/main/registry.json";
-
-export async function fetchRegistry() {
-  try {
-    const response = await axios.get(REGISTRY_URL);
-    return response.data;
-  } catch (error) {
-    console.error(chalk.red("Failed to fetch registry!"));
-    process.exit(1);
-  }
-}
 
 export async function installComponent(componentName: string) {
   const registry = await fetchRegistry();
